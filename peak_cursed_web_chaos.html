@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~*~ ☠️ Xx_D4RK_4NG3L_666_xX's ULTIMATE HAUNTED REALM ☠️ ~*~ [BEST VIEWED IN NETSCAPE NAVIGATOR AT 640x480]</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* CURSED BASE STYLES */
+        :root {
+            --cursor-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><text y="20" font-size="22">💀</text></svg>');
+        }
+
+        * {
+            cursor: var(--cursor-icon), auto !important;
+            user-select: none;
+        }
+
+        body {
+            background-color: #ff00ff;
+            background-image: 
+                radial-gradient(#00ffff 20%, transparent 20%),
+                radial-gradient(#ffff00 20%, transparent 20%),
+                linear-gradient(45deg, #ff0000 25%, transparent 25%, transparent 75%, #ff0000 75%, #ff0000);
+            background-size: 40px 40px, 40px 40px, 20px 20px;
+            background-position: 0 0, 20px 20px, 0 0;
+            font-family: "Comic Sans MS", "Papyrus", "Chalkboard", "Comic Neue", cursive, fantasy;
+            color: #00ff00;
+            margin: 0;
+            padding: 5px;
+            overflow-x: hidden;
+            transition: transform 0.1s ease, filter 0.3s ease;
+        }
+
+        /* EVIL / DEMON MODE */
+        body.evil-mode {
+            filter: invert(100%) hue-rotate(180deg) contrast(300%) !important;
+            transform: rotate(180deg);
+        }
+
+        /* NUKE / DESTROYED MODE */
+        body.nuked {
+            filter: grayscale(100%) contrast(500%) sepia(100%) hue-rotate(-50deg) !important;
+            animation: glitchDestroy 0.05s infinite;
+        }
+
+        @keyframes glitchDestroy {
+            0% { transform: translate(5px, -5px) skewX(10deg); }
+            50% { transform: translate(-5px, 5px) skewY(-10deg); }
+            100% { transform: translate(0, 0); }
+        }
+
+        /* STROBE EPILEPSY MODE */
+        body.epilepsy-mode {
+            animation: hyperStrobe 0.08s infinite !important;
+        }
+
+        @keyframes hyperStrobe {
+            0% { background: #ff0000 !important; filter: invert(0%) contrast(200%); }
+            20% { background: #00ff00 !important; filter: invert(100%); }
+            40% { background: #0000ff !important; filter: hue-rotate(90deg); }
+            60% { background: #ffff00 !important; filter: invert(0%); }
+            80% { background: #ff00ff !important; filter: hue-rotate(270deg); }
+            100% { background: #00ffff !important; filter: contrast(300%); }
+        }
+
+        /* SCREEN SHAKE CLASS */
+        .earthquake {
+            animation: quake 0.15s infinite;
+        }
+
+        @keyframes quake {
+            0% { transform: translate(5px, 7px) rotate(2deg); }
+            25% { transform: translate(-6px, -5px) rotate(-3deg); }
+            50% { transform: translate(7px, -4px) rotate(3deg); }
+            75% { transform: translate(-5px, 6px) rotate(-2deg); }
+            100% { transform: translate(3px, -5px) rotate(0deg); }
+        }
+
+        /* VIOLENT RAINBOW TEXT */
+        .hyper-rainbow {
+            animation: rainbowFlash 0.1s infinite alternate;
+            font-weight: 900;
+            text-shadow: 3px 3px 0px #000, -3px -3px 0px #fff;
+        }
+
+        @keyframes rainbowFlash {
+            0% { color: #ff0000; transform: scale(1) rotate(-3deg); }
+            25% { color: #00ff00; transform: scale(1.1) rotate(3deg); }
+            50% { color: #00ffff; transform: scale(0.95) rotate(-2deg); }
+            75% { color: #ffff00; transform: scale(1.05) rotate(4deg); }
+            100% { color: #ff00ff; transform: scale(1.2) rotate(-5deg); }
+        }
+
+        /* DISTORTED FRAMES */
+        .main-wrapper {
+            max-width: 1000px;
+            margin: 0 auto;
+            border: 12px groove #ff0000;
+            background-color: rgba(0, 0, 0, 0.9);
+            box-shadow: 20px 20px 0px #00ff00, -20px -20px 0px #ff00ff;
+            padding: 10px;
+            position: relative;
+        }
+
+        .broken-frame {
+            transform: rotate(-3deg) skew(-2deg);
+            border: 8px dashed #ffff00;
+            background: linear-gradient(135deg, #ff0000, #0000ff, #00ff00);
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        .upside-down-box {
+            transform: rotate(180deg);
+            background: #ffff00;
+            color: #ff0000;
+            padding: 8px;
+            border: 4px inset #000;
+            margin: 10px 0;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 240px 1fr 200px;
+            gap: 10px;
+        }
+
+        @media (max-width: 800px) {
+            .content-grid { grid-template-columns: 1fr; }
+        }
+
+        .sidebar-left { transform: rotate(2deg); background: #00ffff; color: #000; padding: 10px; border: 5px ridge #ff0000; }
+        .sidebar-right { transform: rotate(-3deg); background: #ff00ff; color: #fff; padding: 10px; border: 5px outset #ffff00; }
+        .main-content { background: #ffffff; color: #000; border: 8px double #00ff00; padding: 12px; }
+
+        /* BUTTON CHAOS */
+        .cursed-btn {
+            background: linear-gradient(to bottom, #ff0000 0%, #0000ff 100%);
+            color: #ffffff;
+            font-family: "Impact", sans-serif;
+            font-size: 16px;
+            border: 4px outset #ffffff;
+            padding: 6px 12px;
+            text-shadow: 2px 2px 0px #000;
+            box-shadow: 4px 4px 0px #000;
+            margin: 3px;
+            display: inline-block;
+            transition: all 0.05s ease;
+        }
+
+        .cursed-btn:hover {
+            transform: scale(1.2) rotate(10deg);
+            background: #00ff00;
+            color: #000;
+        }
+
+        .cursed-btn:active {
+            transform: scale(0.9) rotate(-10deg);
+            border-style: inset;
+        }
+
+        /* POPUPS */
+        .popup-window {
+            position: fixed;
+            width: 280px;
+            background: #c0c0c0;
+            border: 3px outset #fff;
+            box-shadow: 8px 8px 0px #000;
+            z-index: 9999;
+        }
+
+        .popup-title {
+            background: linear-gradient(90deg, #000080, #ff0000);
+            color: white;
+            padding: 3px 6px;
+            font-weight: bold;
+            font-size: 12px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* CURSOR TRAIL */
+        .trail-item {
+            position: fixed;
+            pointer-events: none;
+            z-index: 100000;
+            font-size: 26px;
+            animation: particleSpin 0.7s forwards linear;
+        }
+
+        @keyframes particleSpin {
+            0% { opacity: 1; transform: scale(1.6) rotate(0deg); }
+            100% { opacity: 0; transform: scale(0.1) rotate(720deg) translateY(60px); }
+        }
+
+        .blink-fast { animation: blink 0.15s step-start infinite; }
+        @keyframes blink { 50% { opacity: 0; } }
+
+        .under-construction-bar {
+            background: repeating-linear-gradient(-45deg, #000, #000 20px, #ffff00 20px, #ffff00 40px);
+            color: #ff0000;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            padding: 8px;
+            text-shadow: 2px 2px 0px #fff;
+            border: 4px solid #ff0000;
+        }
+
+        /* MODAL DIALOG */
+        .modal-overlay {
+            position: fixed;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            background: rgba(0, 0, 0, 0.85);
+            z-index: 200000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-box {
+            background: #ffff00;
+            border: 8px dashed #ff0000;
+            padding: 20px;
+            max-width: 420px;
+            text-align: center;
+            box-shadow: 0 0 40px #00ffff;
+            color: #000;
+        }
+    </style>
+</head>
+<body id="body">
+
+    <!-- CURSED CONTROL PANEL -->
+    <div style="position: fixed; top: 0; left: 0; width: 100%; z-index: 100000; background: #000; border-bottom: 4px solid #ff0000; padding: 4px; display: flex; justify-content: space-around; flex-wrap: wrap;">
+        <button class="cursed-btn" onclick="toggleEpilepsy()" style="font-size: 11px; background: #ff0000;">⚡ TURBO STROBE</button>
+        <button class="cursed-btn" onclick="toggleMIDI()" id="midiBtn" style="font-size: 11px; background: #00ff00; color: #000;">🎹 CURSED MIDI: OFF</button>
+        <button class="cursed-btn" onclick="triggerEarthquake()" style="font-size: 11px; background: #ffff00; color: #000;">🫨 EARTHQUAKE</button>
+        <button class="cursed-btn blink-fast" onclick="triggerDownloadBomb()" style="font-size: 11px; background: #ff0000; color: #fff; font-weight: bold;">💥 DOWNLOAD BOMB (5x)</button>
+        <button class="cursed-btn" onclick="openBillionModal()" style="font-size: 11px; background: #00ff00; color: #000; font-weight: bold;">💎 CLAIM $1,000,000,000</button>
+        <button class="cursed-btn" onclick="spawnSpamPopup()" style="font-size: 11px; background: #ff00ff;">💣 SPAWN VIRUS</button>
+        <button class="cursed-btn" onclick="claimPrize()" style="font-size: 11px; background: #00ffff; color: #000;">💰 WIN $1,000,000</button>
+        <button class="cursed-btn" onclick="downloadRAM()" style="font-size: 11px; background: #ffaa00; color: #000;">💾 FREE 64GB RAM.EXE</button>
+        <button class="cursed-btn" onclick="summonDemons()" style="font-size: 11px; background: #660099;">😈 EVIL DEMON MODE</button>
+        <button class="cursed-btn" onclick="nukePage()" style="font-size: 11px; background: #ff0055;">☢️ NUKE PAGE</button>
+        <button class="cursed-btn" onclick="cycleCursor()" id="cursorBtn" style="font-size: 11px; background: #ffffff; color: #000;">🖱️ CURSOR: 💀</button>
+    </div>
+
+    <div style="height: 45px;"></div>
+
+    <!-- MULTIPLE CONFLICTING MARQUEES -->
+    <marquee behavior="scroll" direction="left" scrollamount="35" style="background: #ff0000; color: #ffff00; font-size: 24px; font-weight: bold;">
+        🚨 WARNING: CRITICAL SYSTEM OVERHEAT! YOUR COMPUTER IS BEING DOWNLOADED BY A HACKER! 🚨
+    </marquee>
+    <marquee behavior="alternate" direction="right" scrollamount="50" style="background: #00ff00; color: #ff00ff; font-weight: 900; font-size: 20px;">
+        🔥🔥🔥 WELCOME TO THE MOST HAUNTED SITE ON THE WORLD WIDE WEB 🔥🔥🔥
+    </marquee>
+    <marquee behavior="scroll" direction="up" scrollamount="8" style="height: 40px; background: #00ffff; color: #000; font-weight: bold; text-align: center;">
+        ⬆️ UPWARD SCROLLING TEXT OF DOOM ⬆️ SIGN MY GUESTBOOK NOW OR BE CURSED FOR 7 YEARS ⬆️
+    </marquee>
+
+    <!-- INITIAL POPUP -->
+    <div class="popup-window" id="pop1" style="top: 150px; left: 50px;">
+        <div class="popup-title"><span>⚠️ SYSTEM ERROR 0x666</span><span style="cursor:pointer;" onclick="closeAndMultiply('pop1')">X</span></div>
+        <div style="padding: 15px; text-align: center; color: #000;">
+            <p style="font-weight: bold; font-size: 14px;">VIRUS DETECTED: WORM.WIN32.BONZI</p>
+            <div style="font-size: 40px;" class="blink-fast">👾</div>
+            <button class="cursed-btn" onmouseover="dodgeButton(this)" onclick="playFX('error'); alert('YOU CANNOT ESCAPE!')">DELETE VIRUS</button>
+        </div>
+    </div>
+
+    <!-- MAIN WRAPPER -->
+    <div class="main-wrapper" id="wrapper">
+
+        <!-- BROKEN HEADER BANNER -->
+        <div class="broken-frame">
+            <h1 class="hyper-rainbow" style="font-size: 42px; text-align: center; margin: 0;" id="mainHeader">
+                ☠️ Xx_D4RK_4NG3L_666_xX's FORTRESS ☠️
+            </h1>
+            <p style="text-align: center; color: #ffffff; font-weight: bold; margin: 5px 0;" class="blink-fast">
+                *** BEST VIEWED WITH 56k DIAL-UP MODEM & NETSCAPE 4.7 ***
+            </p>
+            <div style="text-align: center; margin-top: 10px;">
+                <button class="cursed-btn blink-fast" onclick="openBillionModal()" style="font-size: 20px; background: #00ff00; color: #000; padding: 12px 24px; border: 6px outset #fff;">
+                    💵 CLAIM YOUR $1,000,000,000 CASH PRIZE NOW! 💵
+                </button>
+            </div>
+        </div>
+
+        <div class="under-construction-bar blink-fast">
+            🚧 UNDER CONSTRUCTION FOREVER 🚧 DO NOT ENTER WITHOUT SAFETY GOGGLES 🚧
+        </div>
+
+        <!-- MAIN LAYOUT GRID -->
+        <div class="content-grid" style="margin-top: 15px;">
+
+            <!-- LEFT SIDEBAR -->
+            <div class="sidebar-left">
+                <h3 class="hyper-rainbow" style="text-align: center; background: #000; margin-top: 0;">NAV MENU</h3>
+                <ul style="list-style-type: disc; font-weight: bold; padding-left: 20px;">
+                    <li><button class="cursed-btn" onclick="triggerSingleDownload('FREE_BONZI_BUDDY_SETUP.vbs')" style="width:100%; font-size:11px;">[ 💾 BONZI_BUDDY.vbs ]</button></li>
+                    <li><button class="cursed-btn" onclick="downloadRAM()" style="width:100%; font-size:11px;">[ 💾 FREE_RAM_installer.exe ]</button></li>
+                    <li><button class="cursed-btn" onclick="triggerSingleDownload('TOTALLY_NOT_A_VIRUS_TRUST_ME.bat')" style="width:100%; font-size:11px;">[ 💾 TRUST_ME.bat ]</button></li>
+                    <li><button class="cursed-btn" onclick="triggerSingleDownload('ILOVEYOU_VIRUS_RECREATED_2000.txt.vbs')" style="width:100%; font-size:11px;">[ 💾 ILOVEYOU.vbs ]</button></li>
+                    <li><button class="cursed-btn" onclick="claimPrize()" style="width:100%; font-size:11px;">[ 💰 CLAIM_PRIZE.pdf ]</button></li>
+                    <li><button class="cursed-btn" onclick="generateRandomCursedFile()" style="width:100%; font-size:11px; background:#ff0055;">[ 🎲 RANDOM FILE ]</button></li>
+                </ul>
+
+                <div class="upside-down-box">
+                    <strong>UPSIDE DOWN ZONE:</strong><br>
+                    If you can read this, your monitor is backwards!
+                </div>
+
+                <div style="background: #000; color: #00ff00; padding: 10px; border: 3px inset #fff; text-align: center;">
+                    <p style="margin: 0; font-size: 12px;">VISITOR COUNT:</p>
+                    <h2 id="hitCounter" style="margin: 5px 0; font-family: monospace; font-size: 28px; color: #ff0000;" class="blink-fast">00666999</h2>
+                    <small>SPEED: OVER 9000 HITS/SEC</small>
+                </div>
+
+                <div style="text-align: center; margin-top: 15px;">
+                    <button class="cursed-btn" onclick="feedPet()">FEED PET SKULL 💀</button>
+                    <div id="petStatus" style="font-size: 12px; font-weight: bold; margin-top: 5px;">STATUS: RAVENOUS</div>
+                </div>
+            </div>
+
+            <!-- MAIN CONTENT -->
+            <div class="main-content" id="mainArea">
+                <h2 style="color: #ff0000; text-align: center;" class="hyper-rainbow">🔥 FAKE VIRUS SCANNER v3.0 🔥</h2>
+
+                <!-- FAKE SCANNER PROGRESS -->
+                <div style="border: 3px inset #000; background: #c0c0c0; padding: 10px; margin-bottom: 15px;">
+                    <div style="font-size: 12px; font-weight: bold; margin-bottom: 5px;" id="scanText">SCANNING SYSTEM32...</div>
+                    <div style="width: 100%; background: #fff; border: 2px solid #000; height: 25px;">
+                        <div id="progressBar" style="width: 10%; height: 100%; background: linear-gradient(90deg, #ff0000, #ffff00, #00ff00); transition: width 0.2s;"></div>
+                    </div>
+                </div>
+
+                <!-- DIVERSE FILE MATRIX DOWNLOAD SECTION -->
+                <div style="border: 4px ridge #ff00ff; background: #000; color: #fff; padding: 10px; margin-bottom: 15px;">
+                    <h3 class="hyper-rainbow" style="margin: 0; text-align: center;">💾 CURSED FILE DOWNLOAD CENTER</h3>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-top: 8px;">
+                        <button class="cursed-btn" onclick="triggerFileDownload('png')" style="font-size: 10px; background: #00ffff; color:#000;">🎨 GLITCH_NOISE.png</button>
+                        <button class="cursed-btn" onclick="triggerFileDownload('reg')" style="font-size: 10px; background: #ffaa00; color:#000;">⚙️ DISABLE_TASKMGR.reg</button>
+                        <button class="cursed-btn" onclick="triggerFileDownload('rtf')" style="font-size: 10px; background: #ff00ff; color:#fff;">📝 TOP_SECRET_HACK.rtf</button>
+                        <button class="cursed-btn" onclick="triggerFileDownload('sav')" style="font-size: 10px; background: #00ff00; color:#000;">🎮 DOOM_100PCT_SAVE.sav</button>
+                        <button class="cursed-btn" onclick="triggerFileDownload('log')" style="font-size: 10px; background: #ffffff; color:#000;">📜 FATAL_BSOD_CRASH.log</button>
+                        <button class="cursed-btn" onclick="triggerFileDownload('apk')" style="font-size: 10px; background: #a4c639; color:#000;">📱 FREE_VBUCKS_APP.apk</button>
+                    </div>
+                </div>
+
+                <h3 style="background: #ff00ff; color: #fff; padding: 5px;" class="earthquake">💬 GUESTBOOK SPAM SIMULATOR</h3>
+                <div id="guestbook" style="height: 140px; overflow-y: scroll; border: 4px groove #000; background: #000; color: #00ff00; font-family: monospace; padding: 5px; font-size: 11px;">
+                    <div>[Admin_666]: WELCOME TO HELL LOL!!!!!!</div>
+                    <div>[Neo_Matrix]: Who downloaded all my RAM?</div>
+                </div>
+
+                <div style="margin-top: 10px; display: flex; gap: 5px; flex-wrap: wrap;">
+                    <input type="text" id="gbMsg" placeholder="Type spam message..." style="flex: 1; font-family: cursive; padding: 4px;">
+                    <button class="cursed-btn" style="font-size: 12px;" onclick="addSpam()">SIGN GUESTBOOK</button>
+                </div>
+
+                <div style="margin-top: 20px; text-align: center; background: #ffff00; border: 5px dotted #ff0000; padding: 10px;">
+                    <h3 class="hyper-rainbow" style="margin: 0;">🎹 NOSTALGIC 90S SYNTH LOOPER</h3>
+                    <p style="font-size: 12px; color: #000;">Click below to activate synthesized audio chaos!</p>
+                    <button class="retro-btn cursed-btn" onclick="toggleMIDI()">▶ TOGGLE RETRO SYNTH ANTHEM</button>
+                </div>
+            </div>
+
+            <!-- RIGHT SIDEBAR -->
+            <div class="sidebar-right">
+                <h4 style="text-align: center; margin-top: 0; background: #000;" class="blink-fast">AWESOME BADGES</h4>
+                <div style="display: flex; flex-direction: column; gap: 10px; align-items: center;">
+                    <button class="cursed-btn" onclick="playFX('error')" style="background: #ff0000; color: #fff; font-size: 10px; border: 2px solid #fff; transform: rotate(-5deg); width: 100%;">
+                        🔥 IE 6.0 DESTROYER 🔥
+                    </button>
+                    <button class="cursed-btn" onclick="playFX('modem')" style="background: #0000ff; color: #ffff00; font-size: 10px; border: 2px solid #ff00ff; transform: rotate(5deg); width: 100%;">
+                        ⚡ FLASH PLAYER REQUIRED ⚡
+                    </button>
+                    <button class="cursed-btn blink-fast" onclick="playFX('glitch')" style="background: #00ff00; color: #000; font-size: 10px; border: 2px solid #000; width: 100%;">
+                        ⚠️ 100% BUG GUARANTEED ⚠️
+                    </button>
+                </div>
+
+                <hr style="border: 2px dashed #000; margin: 15px 0;">
+
+                <div style="text-align: center;">
+                    <p style="font-size: 11px; font-weight: bold;">WEB RING OF DOOM</p>
+                    <div style="border: 3px double #000; background: #fff; color: #000; font-size: 10px; padding: 5px;" class="earthquake">
+                        <button onclick="playFX('laser')" style="font-size: 8px;">[ PREV ]</button>
+                        <button onclick="playFX('fart')" style="font-size: 8px;">[ RANDOM ]</button>
+                        <button onclick="playFX('jump')" style="font-size: 8px;">[ NEXT ]</button><br>
+                        <strong>MEMBER #666 OF HACKER RING</strong>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- BOTTOM CONFLICTING MARQUEES -->
+        <div style="margin-top: 15px;">
+            <marquee behavior="scroll" direction="right" scrollamount="40" style="background: #0000ff; color: #ffffff; font-size: 18px;">
+                💀 DONT FORGET TO BOOKMARK THIS SITE OR YOUR HARD DRIVE WILL BE ERASED! 💀
+            </marquee>
+            <marquee behavior="alternate" direction="left" scrollamount="25" style="background: #ff00ff; color: #00ffff; font-size: 20px; font-weight: bold;">
+                🎉 CONGRATULATIONS! YOU ARE THE 1,000,000TH VISITOR! CLICK NOW! 🎉
+            </marquee>
+        </div>
+
+        <div style="text-align: center; font-size: 30px; margin-top: 10px;" class="hyper-rainbow">
+            🔥 ☠️ 💣 ⚡ 🦖 👾 💾 💿 🫨 🔥 ☠️ 💣 ⚡
+        </div>
+    </div>
+
+    <!-- $1B EMAIL SPAM MODAL -->
+    <div id="billionModal" class="modal-overlay" style="display: none;">
+        <div class="modal-box">
+            <h2 class="hyper-rainbow" style="margin: 0; font-size: 28px;">💰 WIN $1,000,000,000 💰</h2>
+            <p style="font-size: 13px; font-weight: bold; margin: 10px 0;">Enter your primary email address to claim your instant billionaire transfer!</p>
+            <input type="email" id="victimEmail" placeholder="your_email@domain.com" style="width: 80%; padding: 8px; font-size: 14px; border: 3px inset #000; margin-bottom: 15px; font-family: monospace;">
+            <br>
+            <button class="cursed-btn" onclick="submitBillionSpam()" style="font-size: 18px; background: #00ff00; color: #000;">💸 CLAIM $1B CASH NOW 💸</button>
+            <button class="cursed-btn" onclick="closeBillionModal()" style="font-size: 12px; background: #ff0000; color: #fff;">CANCEL</button>
+        </div>
+    </div>
+
+    <!-- WEB AUDIO & CHAOS JAVASCRIPT -->
+    <script>
+        // WEB AUDIO API SOUND ENGINE
+        let audioCtx = null;
+        let midiInterval = null;
+        let midiPlaying = false;
+
+        function initAudio() {
+            if (!audioCtx) {
+                audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+            }
+            if (audioCtx.state === 'suspended') {
+                audioCtx.resume();
+            }
+        }
+
+        // HARMLESS BLOB FILE DOWNLOAD GENERATOR & TRIGGER
+        function triggerSingleDownload(filename, content = '', type = 'application/octet-stream') {
+            playFX('siren');
+            const blob = new Blob([content], { type: type });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            setTimeout(() => URL.revokeObjectURL(url), 1000);
+        }
+
+        function triggerFileDownload(ext) {
+            playFX('laser');
+            switch (ext) {
+                case 'png':
+                    const canvas = document.createElement('canvas');
+                    canvas.width = 100;
+                    canvas.height = 100;
+                    const ctx = canvas.getContext('2d');
+                    ctx.fillStyle = '#ff00ff';
+                    ctx.fillRect(0, 0, 100, 100);
+                    ctx.fillStyle = '#00ffff';
+                    ctx.font = '16px Comic Sans MS';
+                    ctx.fillText('CURSED', 10, 50);
+                    canvas.toBlob(blob => {
+                        const url = URL.createObjectURL(blob);
+                        const a = document.createElement('a');
+                        a.href = url;
+                        a.download = 'ULTRA_HD_CURSED_IMAGE.png';
+                        document.body.appendChild(a);
+                        a.click();
+                        document.body.removeChild(a);
+                    });
+                    break;
+                case 'reg':
+                    const regText = `Windows Registry Editor Version 5.00\n\n[HKEY_LOCAL_MACHINE\\SOFTWARE\\CursedWeb]\n"TaskMgr"="Disabled"\n"Epilepsy"="Maximum"`;
+                    triggerSingleDownload('DISABLE_TASKMGR.reg', regText, 'text/plain');
+                    break;
+                case 'rtf':
+                    const rtfText = `{\\rtf1\\ansi\\deff0{\\fonttbl{\\f0 Comic Sans MS;}}\\f0\\fs24 \\b ULTIMATE HACKER GUIDE \\b0\\par 1. Never download RAM.\\par 2. You just downloaded RTF text!}`;
+                    triggerSingleDownload('TOP_SECRET_HACK.rtf', rtfText, 'text/rtf');
+                    break;
+                case 'sav':
+                    const savText = `DOOM_SAVEGAME_HEADER_V100_HEALTH=100_AMMO=999_GODMODE=TRUE`;
+                    triggerSingleDownload('DOOM_100PCT_SAVE.sav', savText, 'application/octet-stream');
+                    break;
+                case 'log':
+                    const logText = `[CRITICAL BSOD ERROR] STOP: 0x0000007B (0xF78D2524, 0xC0000034, 0x00000000)\nSystem exploded due to high cursed velocity.`;
+                    triggerSingleDownload('FATAL_BSOD_CRASH.log', logText, 'text/plain');
+                    break;
+                case 'apk':
+                    const apkApp = `<!DOCTYPE html><html><body style="background:#a4c639;color:#000;font-family:sans-serif;text-align:center;"><h1>📱 FREE V-BUCKS GENERATOR APK</h1><p>Generating 999,999 V-Bucks...</p><button onclick="alert('V-Bucks Transferred!')">CLAIM V-BUCKS</button></body></html>`;
+                    triggerSingleDownload('FREE_VBUCKS_APP.apk.html', apkApp, 'text/html');
+                    break;
+            }
+        }
+
+        function generateRandomCursedFile() {
+            const exts = ['txt', 'bat', 'vbs', 'log', 'rtf', 'reg'];
+            const randExt = exts[Math.floor(Math.random() * exts.length)];
+            const randName = `CURSED_FILE_${Math.floor(Math.random()*9999)}.${randExt}`;
+            const randContent = `GENERATED CURSED CONTENT ID #${Math.random()}\nSTATUS: MAXIMUM CHAOS`;
+            triggerSingleDownload(randName, randContent, 'text/plain');
+        }
+
+        // AUTO-DOWNLOAD CHAOS BOMB
+        function triggerDownloadBomb() {
+            playFX('screech');
+            triggerEarthquake();
+            const bombFiles = [
+                'DOWNLOAD_MORE_RAM_64GB.exe',
+                'FREE_BONZI_BUDDY_2000.vbs',
+                'TOTALLY_NOT_A_VIRUS.bat',
+                'CRITICAL_SYSTEM_PATCH_666.zip',
+                'WIN_1000000_CASH_PRIZE.pdf'
+            ];
+
+            bombFiles.forEach((filename, i) => {
+                setTimeout(() => {
+                    triggerSingleDownload(filename, `HARMFUL LOOKING FILE: ${filename}`);
+                    playFX('glitch');
+                }, i * 300);
+            });
+        }
+
+        // $1B SPAM MODAL LOGIC & IN-BROWSER SPAM FLOOD SIMULATION
+        function openBillionModal() {
+            playFX('jump');
+            document.getElementById('billionModal').style.display = 'flex';
+        }
+
+        function closeBillionModal() {
+            playFX('error');
+            document.getElementById('billionModal').style.display = 'none';
+        }
+
+        function submitBillionSpam() {
+            const input = document.getElementById('victimEmail').value.trim();
+            const email = input || "victim@domain.com";
+            closeBillionModal();
+            playFX('explosion');
+            triggerEarthquake();
+
+            const spamTemplates = [
+                { sender: "NIGERIAN PRINCE", subject: "RE: YOUR $1B CASH TRANSFER IN PROCESS" },
+                { sender: "BONZI BUDDY", subject: "I HAVE INSTALLED MYSELF TO YOUR EMAIL!" },
+                { sender: "FREE RAM DEPT", subject: "URGENT: DOWNLOAD 128GB MORE RAM" },
+                { sender: "LOTTERY WINNER", subject: "CLAIM YOUR TICKET #666999" },
+                { sender: "CASINO ROYALE", subject: "YOU WON 50,000 FREE SPINS!" },
+                { sender: "HOT SINGLES", subject: "3 NEW MESSAGES IN YOUR INBOX" },
+                { sender: "SYSTEM ADMIN", subject: "PASSWORD EXPIRED - CLICK TO RESET" },
+                { sender: "BANK OF CHAOS", subject: "UNAUTHORIZED DEPOSIT DETECTED" },
+                { sender: "ANTI-VIRUS 2000", subject: "999 VIRUSES FOUND ON YOUR PC" },
+                { sender: "SECRET ADMIRER", subject: "ILOVEYOU.txt.vbs ATTACHMENT" }
+            ];
+
+            // SIMULATE EXACTLY 10 IN-BROWSER SPAM NOTIFICATION POPUPS
+            spamTemplates.forEach((item, idx) => {
+                setTimeout(() => {
+                    playFX('siren');
+                    const pop = document.createElement('div');
+                    pop.className = 'popup-window';
+                    pop.style.top = (60 + idx * 30 + Math.random() * 40) + 'px';
+                    pop.style.left = (40 + idx * 35 + Math.random() * 50) + 'px';
+                    pop.style.width = '300px';
+                    pop.style.zIndex = 250000 + idx;
+                    pop.innerHTML = `
+                        <div class="popup-title"><span>📧 NEW INBOX SPAM #${idx+1}</span><span style="cursor:pointer;" onclick="playFX('error'); this.parentElement.parentElement.remove();">X</span></div>
+                        <div style="padding: 10px; background: #fff; color: #000; font-size: 11px;">
+                            <div><strong>TO:</strong> ${email}</div>
+                            <div><strong>FROM:</strong> ${item.sender}</div>
+                            <div style="color: red; font-weight: bold; margin: 4px 0;">${item.subject}</div>
+                            <button class="cursed-btn" style="font-size: 9px;" onclick="playFX('fart'); alert('SPAM OPENED!');">OPEN SPAM EMAIL</button>
+                        </div>
+                    `;
+                    document.body.appendChild(pop);
+                }, idx * 250);
+            });
+        }
+
+        // UNIVERSAL SOUND FX GENERATOR
+        function playFX(type) {
+            initAudio();
+            if (!audioCtx) return;
+
+            const now = audioCtx.currentTime;
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+
+            switch (type) {
+                case 'hover':
+                    osc.type = 'sine';
+                    osc.frequency.setValueAtTime(400, now);
+                    osc.frequency.exponentialRampToValueAtTime(800, now + 0.05);
+                    gain.gain.setValueAtTime(0.05, now);
+                    gain.gain.linearRampToValueAtTime(0.01, now + 0.05);
+                    osc.start(now);
+                    osc.stop(now + 0.05);
+                    break;
+                case 'click':
+                    osc.type = 'square';
+                    osc.frequency.setValueAtTime(300, now);
+                    osc.frequency.exponentialRampToValueAtTime(120, now + 0.08);
+                    gain.gain.setValueAtTime(0.15, now);
+                    gain.gain.linearRampToValueAtTime(0.01, now + 0.08);
+                    osc.start(now);
+                    osc.stop(now + 0.08);
+                    break;
+                case 'siren':
+                    osc.type = 'sawtooth';
+                    osc.frequency.setValueAtTime(600, now);
+                    osc.frequency.linearRampToValueAtTime(1400, now + 0.15);
+                    osc.frequency.linearRampToValueAtTime(600, now + 0.3);
+                    gain.gain.setValueAtTime(0.25, now);
+                    gain.gain.linearRampToValueAtTime(0.01, now + 0.3);
+                    osc.start(now);
+                    osc.stop(now + 0.3);
+                    break;
+                case 'screech':
+                    osc.type = 'sawtooth';
+                    osc.frequency.setValueAtTime(2500, now);
+                    osc.frequency.exponentialRampToValueAtTime(200, now + 0.35);
+                    gain.gain.setValueAtTime(0.3, now);
+                    gain.gain.linearRampToValueAtTime(0.01, now + 0.35);
+                    osc.start(now);
+                    osc.stop(now + 0.35);
+                    break;
+                case 'error':
+                    osc.type = 'sawtooth';
+                    osc.frequency.setValueAtTime(150, now);
+                    gain.gain.setValueAtTime(0.3, now);
+                    gain.gain.exponentialRampToValueAtTime(0.01, now + 0.4);
+                    osc.start(now);
+                    osc.stop(now + 0.4);
+                    break;
+                case 'laser':
+                    osc.type = 'sawtooth';
+                    osc.frequency.setValueAtTime(1200, now);
+                    osc.frequency.exponentialRampToValueAtTime(100, now + 0.15);
+                    gain.gain.setValueAtTime(0.2, now);
+                    gain.gain.linearRampToValueAtTime(0.01, now + 0.15);
+                    osc.start(now);
+                    osc.stop(now + 0.15);
+                    break;
+                case 'jump':
+                    osc.type = 'square';
+                    osc.frequency.setValueAtTime(150, now);
+                    osc.frequency.linearRampToValueAtTime(600, now + 0.15);
+                    gain.gain.setValueAtTime(0.2, now);
+                    gain.gain.linearRampToValueAtTime(0.01, now + 0.15);
+                    osc.start(now);
+                    osc.stop(now + 0.15);
+                    break;
+                case 'modem':
+                    osc.type = 'square';
+                    osc.frequency.setValueAtTime(2000, now);
+                    osc.frequency.linearRampToValueAtTime(800, now + 0.1);
+                    osc.frequency.linearRampToValueAtTime(3200, now + 0.2);
+                    gain.gain.setValueAtTime(0.2, now);
+                    gain.gain.linearRampToValueAtTime(0.01, now + 0.25);
+                    osc.start(now);
+                    osc.stop(now + 0.25);
+                    break;
+                case 'explosion':
+                    const bufferSize = audioCtx.sampleRate * 0.5;
+                    const buffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
+                    const data = buffer.getChannelData(0);
+                    for (let i = 0; i < bufferSize; i++) {
+                        data[i] = Math.random() * 2 - 1;
+                    }
+                    const noise = audioCtx.createBufferSource();
+                    noise.buffer = buffer;
+                    const noiseFilter = audioCtx.createBiquadFilter();
+                    noiseFilter.type = 'lowpass';
+                    noiseFilter.frequency.setValueAtTime(800, now);
+                    noiseFilter.frequency.linearRampToValueAtTime(50, now + 0.5);
+                    noise.connect(noiseFilter);
+                    noiseFilter.connect(gain);
+                    gain.gain.setValueAtTime(0.5, now);
+                    gain.gain.exponentialRampToValueAtTime(0.01, now + 0.5);
+                    noise.start(now);
+                    noise.stop(now + 0.5);
+                    break;
+                case 'fart':
+                    osc.type = 'sawtooth';
+                    osc.frequency.setValueAtTime(100, now);
+                    osc.frequency.linearRampToValueAtTime(40, now + 0.3);
+                    gain.gain.setValueAtTime(0.3, now);
+                    gain.gain.linearRampToValueAtTime(0.01, now + 0.3);
+                    osc.start(now);
+                    osc.stop(now + 0.3);
+                    break;
+                case 'demon':
+                    osc.type = 'sawtooth';
+                    osc.frequency.setValueAtTime(60, now);
+                    osc.frequency.linearRampToValueAtTime(30, now + 1.2);
+                    gain.gain.setValueAtTime(0.5, now);
+                    gain.gain.linearRampToValueAtTime(0.01, now + 1.2);
+                    osc.start(now);
+                    osc.stop(now + 1.2);
+                    break;
+                case 'glitch':
+                    osc.type = 'square';
+                    osc.frequency.setValueAtTime(Math.random() * 2000 + 200, now);
+                    gain.gain.setValueAtTime(0.3, now);
+                    gain.gain.linearRampToValueAtTime(0.01, now + 0.05);
+                    osc.start(now);
+                    osc.stop(now + 0.05);
+                    break;
+            }
+        }
+
+        // BIND HOVER AND CLICK AUDIO TO ALL BUTTONS
+        document.querySelectorAll('button').forEach(btn => {
+            btn.addEventListener('mouseenter', () => playFX('hover'));
+            btn.addEventListener('click', () => playFX('click'));
+        });
+
+        // CURSED MIDI SYNTH ANTHEM LOOPER
+        const midiNotes = [261.63, 293.66, 329.63, 349.23, 392.00, 440.00, 493.88, 523.25, 659.25, 783.99];
+        function toggleMIDI() {
+            initAudio();
+            midiPlaying = !midiPlaying;
+            const btn = document.getElementById('midiBtn');
+            btn.innerText = midiPlaying ? "🎹 CURSED MIDI: ON" : "🎹 CURSED MIDI: OFF";
+            btn.style.background = midiPlaying ? "#ff0000" : "#00ff00";
+            btn.style.color = midiPlaying ? "#fff" : "#000";
+
+            if (midiPlaying) {
+                midiInterval = setInterval(() => {
+                    if (!audioCtx) return;
+                    const osc = audioCtx.createOscillator();
+                    const gain = audioCtx.createGain();
+                    osc.connect(gain);
+                    gain.connect(audioCtx.destination);
+
+                    const now = audioCtx.currentTime;
+                    const freq = midiNotes[Math.floor(Math.random() * midiNotes.length)];
+                    osc.type = Math.random() > 0.5 ? 'square' : 'triangle';
+                    osc.frequency.setValueAtTime(freq, now);
+
+                    gain.gain.setValueAtTime(0.15, now);
+                    gain.gain.exponentialRampToValueAtTime(0.001, now + 0.18);
+
+                    osc.start(now);
+                    osc.stop(now + 0.18);
+                }, 130);
+            } else {
+                clearInterval(midiInterval);
+                midiInterval = null;
+            }
+        }
+
+        // CLAIM YOUR PRIZE BUTTON
+        function claimPrize() {
+            triggerSingleDownload('WIN_1000000_CASH_PRIZE.pdf', '%PDF-1.4 CASH PRIZE CERTIFICATE');
+            playFX('jump');
+            for (let i = 0; i < 4; i++) {
+                setTimeout(() => spawnPrizePopup(i), i * 150);
+            }
+        }
+
+        function spawnPrizePopup(index) {
+            playFX('laser');
+            const pop = document.createElement('div');
+            pop.className = 'popup-window';
+            pop.style.top = (100 + index * 40 + Math.random() * 50) + 'px';
+            pop.style.left = (100 + index * 50 + Math.random() * 50) + 'px';
+            pop.innerHTML = `
+                <div class="popup-title"><span>💰 CONGRATULATIONS! YOU WON!</span><span style="cursor:pointer;" onclick="playFX('error'); this.parentElement.parentElement.remove();">X</span></div>
+                <div style="padding: 12px; text-align: center; color: #000;">
+                    <h3 class="hyper-rainbow" style="margin:0;">$1,000,000 CASH</h3>
+                    <p style="font-size:11px; font-weight:bold;">ENTER YOUR CREDIT CARD & SOCIAL SECURITY TO CLAIM!</p>
+                    <button class="cursed-btn" onclick="playFX('explosion'); triggerSingleDownload('PRIZE_RECEIPT.txt', 'RECEIPT #999'); alert('BANK ACCOUNT CLEARED! THANK YOU!'); this.parentElement.parentElement.remove();">CLAIM IMMEDIATELY</button>
+                </div>
+            `;
+            document.body.appendChild(pop);
+        }
+
+        // DOWNLOAD FREE RAM BUTTON
+        function downloadRAM() {
+            triggerSingleDownload('FREE_RAM_INSTALLER_64GB.exe.html', '<html><body>RAM Installer</body></html>', 'text/html');
+            playFX('modem');
+            const main = document.getElementById('mainArea');
+            const ramBox = document.createElement('div');
+            ramBox.style.cssText = 'border: 4px solid #ff0000; background: #ffff00; padding: 15px; text-align: center; margin-bottom: 15px; color: #000;';
+            ramBox.innerHTML = `
+                <h3 class="hyper-rainbow" style="margin:0;">💾 DOWNLOADING 64GB DDR5 RAM...</h3>
+                <div style="width: 100%; background: #fff; border: 2px solid #000; height: 30px; margin: 10px 0;">
+                    <div id="ramBar" style="width: 0%; height: 100%; background: #00ff00;"></div>
+                </div>
+                <div id="ramStatus" style="font-weight: bold; font-size: 12px;">ALLOCATING VIRTUAL MEMORY...</div>
+            `;
+            main.prepend(ramBox);
+
+            let pct = 0;
+            const ramInt = setInterval(() => {
+                pct += 10;
+                document.getElementById('ramBar').style.width = pct + '%';
+                playFX('glitch');
+                if (pct >= 100) {
+                    clearInterval(ramInt);
+                    playFX('explosion');
+                    triggerEarthquake();
+                    document.getElementById('ramStatus').innerHTML = "<strong style='color:red;'>⚠️ RAM OVERFLOW! YOUR COMPUTER IS NOW A TOASTER!</strong>";
+                }
+            }, 200);
+        }
+
+        // SUMMON DEMONS / EVIL MODE
+        function summonDemons() {
+            playFX('demon');
+            document.body.classList.toggle('evil-mode');
+            const header = document.getElementById('mainHeader');
+            header.innerText = document.body.classList.contains('evil-mode') ? "😈 𝕎𝔼𝕃ℂ𝕆𝕄𝔼 𝕋𝕆 𝕋ℍ𝔼 𝕌ℕ𝔻𝔼ℝ𝕎𝕆ℝ𝕃𝔻 😈" : "☠️ Xx_D4RK_4NG3L_666_xX's FORTRESS ☠️";
+            triggerEarthquake();
+        }
+
+        // NUKE THIS PAGE / SELF-DESTRUCT
+        function nukePage() {
+            playFX('explosion');
+            triggerEarthquake();
+            document.body.classList.add('nuked');
+            setTimeout(() => {
+                document.body.innerHTML = `
+                    <div style="text-align: center; padding: 50px; background: #000; color: #ff0000; font-family: monospace; height: 100vh;">
+                        <h1 style="font-size: 50px;" class="hyper-rainbow">☢️ SYSTEM DESTROYED ☢️</h1>
+                        <pre style="font-size: 14px; color: #00ff00;">
+                                  _ ._  _ _ ._
+                                .-.  _ ._  _ _ ._
+                              (_.  _ ._  _ _ ._
+                             (  .  _ ._  _ _ ._
+                            (  .  _ ._  _ _ ._
+                        </pre>
+                        <h2>THIS PAGE HAS BEEN NUKED. REBOOTING SYSTEM...</h2>
+                        <button class="cursed-btn" onclick="location.reload()" style="font-size: 24px; background: #00ff00; color: #000;">🔄 RESURRECT WEBSITE</button>
+                    </div>
+                `;
+            }, 1500);
+        }
+
+        // CURSOR TRAIL SWITCHER
+        const cursors = [
+            { icon: '💀', trail: ['💀', '🔥', '⚡', '💣'] },
+            { icon: '🧻', trail: ['🧻', '💩', '🚽', '🪠'] },
+            { icon: '🍌', trail: ['🍌', '🐵', '🌴', '🥥'] },
+            { icon: '👾', trail: ['👾', '🕹️', '👾', '🚀'] }
+        ];
+        let currentCursorIdx = 0;
+
+        function cycleCursor() {
+            currentCursorIdx = (currentCursorIdx + 1) % cursors.length;
+            const cur = cursors[currentCursorIdx];
+            document.getElementById('cursorBtn').innerText = `🖱️ CURSOR: ${cur.icon}`;
+            playFX('jump');
+
+            const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><text y="20" font-size="22">${cur.icon}</text></svg>`;
+            document.documentElement.style.setProperty('--cursor-icon', `url('data:image/svg+xml;utf8,${encodeURIComponent(svg)}')`);
+        }
+
+        // EPILEPSY MODE TOGGLE
+        function toggleEpilepsy() {
+            playFX('glitch');
+            document.body.classList.toggle('epilepsy-mode');
+        }
+
+        // EARTHQUAKE / SCREEN SHAKE
+        function triggerEarthquake() {
+            playFX('modem');
+            const body = document.getElementById('body');
+            body.classList.add('earthquake');
+            setTimeout(() => body.classList.remove('earthquake'), 2000);
+        }
+
+        // UN-CLICKABLE MOVING BUTTONS
+        function dodgeButton(btn) {
+            btn.style.position = 'absolute';
+            btn.style.top = Math.random() * 80 + '%';
+            btn.style.left = Math.random() * 80 + '%';
+            playFX('hover');
+        }
+
+        // MULTIPLYING SPAM POPUPS
+        function spawnSpamPopup() {
+            playFX('error');
+            const pop = document.createElement('div');
+            pop.className = 'popup-window';
+            pop.style.top = Math.random() * (window.innerHeight - 200) + 'px';
+            pop.style.left = Math.random() * (window.innerWidth - 250) + 'px';
+            pop.innerHTML = `
+                <div class="popup-title"><span>💣 FATAL ERROR 0x${Math.floor(Math.random()*99999)}</span><span style="cursor:pointer;" onclick="playFX('error'); this.parentElement.parentElement.remove(); spawnSpamPopup(); spawnSpamPopup();">X</span></div>
+                <div style="padding: 10px; text-align: center; color: #000;">
+                    <p style="font-weight: bold; font-size: 12px;">CRITICAL SYSTEM FAILURE! CLICK BELOW TO FIX!</p>
+                    <button class="cursed-btn" style="font-size: 10px;" onclick="triggerEarthquake()">FIX COMPUTER NOW</button>
+                </div>
+            `;
+            document.body.appendChild(pop);
+        }
+
+        function closeAndMultiply(id) {
+            playFX('error');
+            const el = document.getElementById(id);
+            if (el) el.remove();
+            spawnSpamPopup();
+            spawnSpamPopup();
+        }
+
+        // CURSOR TRAIL SPINNER
+        document.addEventListener('mousemove', function(e) {
+            if (Math.random() > 0.4) {
+                const particle = document.createElement('div');
+                particle.className = 'trail-item';
+                const curTrail = cursors[currentCursorIdx].trail;
+                particle.innerText = curTrail[Math.floor(Math.random() * curTrail.length)];
+
+                particle.style.left = e.clientX + 'px';
+                particle.style.top = e.clientY + 'px';
+                document.body.appendChild(particle);
+
+                setTimeout(() => particle.remove(), 700);
+            }
+        });
+
+        // UNCONTROLLABLE HIT COUNTER
+        let hits = 666999;
+        setInterval(() => {
+            hits += Math.floor(Math.random() * 50) + 1;
+            const counter = document.getElementById('hitCounter');
+            if (counter) counter.innerText = String(hits).padStart(8, '0');
+        }, 100);
+
+        // FAKE VIRUS SCANNER PROGRESS
+        let progress = 10;
+        setInterval(() => {
+            progress = (progress + Math.floor(Math.random() * 15)) % 100;
+            const bar = document.getElementById('progressBar');
+            if (bar) bar.style.width = progress + '%';
+            const scanTexts = [
+                "SCANNING SYSTEM32...",
+                "DELETING IMPORTANT FILES...",
+                "DOWNLOADING FREE RAM...",
+                "CORRUPTING GRAPHICS DRIVER...",
+                "OVERCLOCKING TO 9000GHZ..."
+            ];
+            const textEl = document.getElementById('scanText');
+            if (textEl) textEl.innerText = scanTexts[Math.floor(Math.random() * scanTexts.length)];
+        }, 800);
+
+        // GUESTBOOK SPAMMER
+        function addSpam() {
+            playFX('fart');
+            const input = document.getElementById('gbMsg');
+            const msg = input.value.trim() || "SPAM SPAM SPAM!!!";
+            const gb = document.getElementById('guestbook');
+            const entry = document.createElement('div');
+            entry.style.color = ['#00ff00', '#ff00ff', '#ffff00', '#00ffff'][Math.floor(Math.random()*4)];
+            entry.innerText = `[User_${Math.floor(Math.random()*999)}]: ${msg} Stamp: 💩`;
+            gb.prepend(entry);
+            input.value = '';
+        }
+
+        // PET SKULL
+        function feedPet() {
+            playFX('fart');
+            document.getElementById('petStatus').innerText = "STATUS: BURPING 🔥";
+            triggerEarthquake();
+            setTimeout(() => {
+                document.getElementById('petStatus').innerText = "STATUS: RAVENOUS";
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
